@@ -1,0 +1,9 @@
+C:\workspaces\gitprojects\WeatherForecaster\Core\DB_WeatherForecaster\bin\Debug\DB_WeatherForecaster.dacpac
+C:\workspaces\gitprojects\WeatherForecaster\Core\DB_WeatherForecaster\bin\Debug\DB_WeatherForecaster.dll
+C:\workspaces\gitprojects\WeatherForecaster\Core\DB_WeatherForecaster\bin\Debug\DB_WeatherForecaster.pdb
+C:\workspaces\gitprojects\WeatherForecaster\Core\DB_WeatherForecaster\obj\Debug\DB_WeatherForecaster.dll
+C:\workspaces\gitprojects\WeatherForecaster\Core\DB_WeatherForecaster\obj\Debug\DB_WeatherForecaster.pdb
+C:\workspaces\gitprojects\WeatherForecaster\Core\DB_WeatherForecaster\obj\Debug\Model.xml
+C:\workspaces\gitprojects\WeatherForecaster\Core\DB_WeatherForecaster\obj\Debug\refactor.xml
+C:\workspaces\gitprojects\WeatherForecaster\Core\DB_WeatherForecaster\obj\Debug\postdeploy.sql
+C:\workspaces\gitprojects\WeatherForecaster\Core\DB_WeatherForecaster\obj\Debug\predeploy.sql

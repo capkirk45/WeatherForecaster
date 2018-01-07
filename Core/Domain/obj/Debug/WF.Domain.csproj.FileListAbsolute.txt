@@ -1,0 +1,5 @@
+C:\workspaces\gitprojects\WeatherForecaster\Core\Domain\bin\Debug\WF.Domain.dll
+C:\workspaces\gitprojects\WeatherForecaster\Core\Domain\bin\Debug\WF.Domain.pdb
+C:\workspaces\gitprojects\WeatherForecaster\Core\Domain\obj\Debug\WF.Domain.csprojResolveAssemblyReference.cache
+C:\workspaces\gitprojects\WeatherForecaster\Core\Domain\obj\Debug\WF.Domain.dll
+C:\workspaces\gitprojects\WeatherForecaster\Core\Domain\obj\Debug\WF.Domain.pdb
