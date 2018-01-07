@@ -1,6 +1,0 @@
-C:\workspaces\gitprojects\WeatherForecaster\Core\Tests\bin\Debug\WF.Tests.dll
-C:\workspaces\gitprojects\WeatherForecaster\Core\Tests\bin\Debug\WF.Tests.pdb
-C:\workspaces\gitprojects\WeatherForecaster\Core\Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-C:\workspaces\gitprojects\WeatherForecaster\Core\Tests\obj\Debug\WF.Tests.csprojResolveAssemblyReference.cache
-C:\workspaces\gitprojects\WeatherForecaster\Core\Tests\obj\Debug\WF.Tests.dll
-C:\workspaces\gitprojects\WeatherForecaster\Core\Tests\obj\Debug\WF.Tests.pdb

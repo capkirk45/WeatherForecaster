@@ -239,3 +239,13 @@ reference\Production_Support\PS_Schedule*.txt
 
 # Visual Studio databasse project files
 *.jfm
+/Core/Common/bin
+/Core/Common/obj
+/Core/Data/bin
+/Core/Data/obj
+/Core/DB_WeatherForecaster/bin
+/Core/DB_WeatherForecaster/obj
+/Core/Domain/bin
+/Core/Domain/obj
+/Core/Tests/bin
+/Core/Tests/obj

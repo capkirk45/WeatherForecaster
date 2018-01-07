@@ -1,5 +1,0 @@
-C:\workspaces\gitprojects\WeatherForecaster\Core\Common\bin\Debug\WF.Common.dll
-C:\workspaces\gitprojects\WeatherForecaster\Core\Common\bin\Debug\WF.Common.pdb
-C:\workspaces\gitprojects\WeatherForecaster\Core\Common\obj\Debug\WF.Common.csprojResolveAssemblyReference.cache
-C:\workspaces\gitprojects\WeatherForecaster\Core\Common\obj\Debug\WF.Common.dll
-C:\workspaces\gitprojects\WeatherForecaster\Core\Common\obj\Debug\WF.Common.pdb
