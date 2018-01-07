@@ -249,3 +249,4 @@ reference\Production_Support\PS_Schedule*.txt
 /Core/Domain/obj
 /Core/Tests/bin
 /Core/Tests/obj
+/Core/.vs
