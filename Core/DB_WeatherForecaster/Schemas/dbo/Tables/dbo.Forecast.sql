@@ -9,10 +9,17 @@ GO
 SET ANSI_PADDING ON
 GO
 
-CREATE TABLE [dbo].[WeatherModel] (
+CREATE TABLE [dbo].[Forecast] (
 
 [Id] [int] Identity(1,1) NOT NULL,
-[ModelName] [varchar](50) NOT NULL,
+[ForecastRegionId] int NOT NULL,
+[ForecastSourceId] int NOT NULL,
+[WeatherModelUsedId] int NULL,
+[ForecastMadeDate] datetime NOT NULL,
+[ForecastRangeStartDate] datetime NOT NULL,
+[ForecastRangeEndDate] datetime NOT NULL, 
+[ForecasterComments] varchar(max) NULL,
+[AccuracyInstinctId] [int] NULL,
 --------------------------------------------------
 --Footer attributes to be included in most entities
 --------------------------------------------------
@@ -22,7 +29,7 @@ CREATE TABLE [dbo].[WeatherModel] (
 [LastModified] [datetime] NOT NULL,
 [LastModifiedBy] [varchar](25) NOT NULL,
 
- CONSTRAINT [PK_WeatherModel] PRIMARY KEY CLUSTERED 
+ CONSTRAINT [PK_Forecast] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]

@@ -72,4 +72,16 @@
     <None Include="Schemas\dbo\Tables\dbo.WeatherModel.sql" />
     <None Include="deploy_database.ps1" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Schemas\dbo\Tables\dbo.ForecastRegion.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Schemas\dbo\Tables\dbo.ForecastSource.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Schemas\dbo\Tables\dbo.Forecast.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Schemas\dbo\Tables\dbo.AccuracyInstinct.sql" />
+  </ItemGroup>
 </Project>

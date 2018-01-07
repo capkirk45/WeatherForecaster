@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DB_WeatherForecasterModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Forecast">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ForecastRegionId" Type="int" Nullable="false" />
+          <Property Name="ForecastSourceId" Type="int" Nullable="false" />
+          <Property Name="WeatherModelUsedId" Type="int" />
+          <Property Name="ForecastMadeDate" Type="datetime" Nullable="false" />
+          <Property Name="ForecastRangeStartDate" Type="datetime" Nullable="false" />
+          <Property Name="ForecastRangeEndDate" Type="datetime" Nullable="false" />
+          <Property Name="ForecasterComments" Type="varchar(max)" />
+          <Property Name="AccuracyInstinctId" Type="int" />
+          <Property Name="GlobalId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Created" Type="datetime" Nullable="false" />
+          <Property Name="CreatedBy" Type="varchar" MaxLength="25" Nullable="false" />
+          <Property Name="LastModified" Type="datetime" Nullable="false" />
+          <Property Name="LastModifiedBy" Type="varchar" MaxLength="25" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="DB_WeatherForecasterModelStoreContainer">
+          <EntitySet Name="Forecast" EntityType="Self.Forecast" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DB_WeatherForecasterModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Forecast">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ForecastRegionId" Type="Int32" Nullable="false" />
+          <Property Name="ForecastSourceId" Type="Int32" Nullable="false" />
+          <Property Name="WeatherModelUsedId" Type="Int32" />
+          <Property Name="ForecastMadeDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ForecastRangeStartDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ForecastRangeEndDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ForecasterComments" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="AccuracyInstinctId" Type="Int32" />
+          <Property Name="GlobalId" Type="Guid" Nullable="false" />
+          <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreatedBy" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="LastModified" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastModifiedBy" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Forecasts" EntityType="Self.Forecast" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DB_WeatherForecasterModelStoreContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="Forecasts">
+            <EntityTypeMapping TypeName="DB_WeatherForecasterModel.Forecast">
+              <MappingFragment StoreEntitySet="Forecast">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ForecastRegionId" ColumnName="ForecastRegionId" />
+                <ScalarProperty Name="ForecastSourceId" ColumnName="ForecastSourceId" />
+                <ScalarProperty Name="WeatherModelUsedId" ColumnName="WeatherModelUsedId" />
+                <ScalarProperty Name="ForecastMadeDate" ColumnName="ForecastMadeDate" />
+                <ScalarProperty Name="ForecastRangeStartDate" ColumnName="ForecastRangeStartDate" />
+                <ScalarProperty Name="ForecastRangeEndDate" ColumnName="ForecastRangeEndDate" />
+                <ScalarProperty Name="ForecasterComments" ColumnName="ForecasterComments" />
+                <ScalarProperty Name="AccuracyInstinctId" ColumnName="AccuracyInstinctId" />
+                <ScalarProperty Name="GlobalId" ColumnName="GlobalId" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

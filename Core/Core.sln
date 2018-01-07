@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Common", "Common\WF.Common.csproj", "{90E1CD1A-4459-4173-9952-146C66D20A17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Data", "Data\WF.Data.csproj", "{83AF562E-E553-4798-9B36-F442C5C26229}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.DataAccess", "Data\WF.DataAccess.csproj", "{83AF562E-E553-4798-9B36-F442C5C26229}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Tests", "Tests\WF.Tests.csproj", "{70603CC1-B642-4371-A79B-FFF0BA1198E4}"
 EndProject
